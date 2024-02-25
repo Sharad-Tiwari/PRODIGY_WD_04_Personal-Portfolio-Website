@@ -313,9 +313,7 @@ position: absolute;
 
 .projects {
   display: grid;
-  justify-content: center;
-  align-items: center;
-  column-gap: 20px;
+  column-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   width: 100%;
   height: fit-content;
@@ -326,7 +324,7 @@ position: absolute;
   width: 180px;
   margin: 20px;
   animation: pop .4s linear;
-    transition: all 4s;
+    transition: all .4s;
 }
 
 .card {
@@ -427,20 +425,19 @@ position: absolute;
 .works {
   position: relative;
   width:100%;
+  margin: 30px 0;
   height:fit-content;
   display: grid;
   color:aliceblue;
   align-items: center;
     row-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .work__container{
-  margin: 10px;
   width: 100%;
   text-align: center;
-  width:375px;
+  width:100%;
   font-size: 18px;
   background: rgba(240, 240, 240, 0.539);
   border-radius: 8px;
@@ -602,4 +599,18 @@ textarea{
 
 .name{
   font-weight: 400; 
+}
+@media screen and (max-width:360px) {
+  .db {
+    visibility: hidden;
+  }
+
+  .projects {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .card-container{
+    width: 150px;
+  }
 }
