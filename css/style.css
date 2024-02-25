@@ -37,16 +37,18 @@ body {
 
 .header {
   width: 100%;
-  height: auto;
-  position: fixed;
-  top: 2%;
+  height: 35px;
+  position: sticky;
+  top: 0%;
   left: 0;
   z-index: 100;
+  padding: 30px 0;
   background: rgb(26, 24, 24);
 }
 
 .nav {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -137,15 +139,43 @@ body {
   color: #f06529;
 }
 
-/* .js {
-  left: 15%;
-} */
+.js {
+  left: 8%;
+  top: 20rem;
+  color:#F0DB4F;
+  font-size: 5rem;
+}
 
 .db {
   top: 9rem;
-  right: 35%;
+  right: 30%;
   color: #00758f;
 }
+
+.py{
+  color: transparent;
+  width: fit-content;
+  height: fit-content;
+  background: linear-gradient(to top,#ffde57,
+    #4584b6,
+    #646464);
+  font-size: 6rem;
+  background-clip: text;
+  position: absolute;
+    bottom: 5rem;
+    left: 10rem;
+}
+
+.ja{
+  color: #fff;
+  font-size: 6rem;
+  width: fit-content;
+    height: fit-content;
+    position: absolute; 
+    top: 9rem;
+    left: 10rem;
+}
+
 
 @media screen and (max-width: 1200px) {
   .header {
@@ -160,14 +190,13 @@ body {
   }
 
   .css {
-    left: 2%;
-    top: 5rem;
+    right: 10%;
   }
-
+/* 
   .html {
     left: 5%;
     bottom: 10rem;
-  }
+  } */
 
   .db {
     top: 5rem;
@@ -178,6 +207,7 @@ body {
   .header {
     height: fit-content;
     background: transparent;
+      padding: 10px 0;
   }
 
   .nav {
@@ -244,8 +274,23 @@ body {
   }
   .db {
     font-size: 5rem;
-    top: 5rem;
+    top: 10rem;
     right: 5%;
+  }
+.ja{
+position: absolute;
+  top: 2rem;
+  left:60%;
+}
+
+  .js {
+    position: absolute;
+    top:15rem;
+    left:0%;
+  }
+
+  .py{
+      left: 80%;
   }
 }
 
