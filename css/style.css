@@ -203,6 +203,7 @@ body {
     right: 5%;
   }
 }
+
 @media screen and (max-width: 720px) {
   .header {
     height: fit-content;
@@ -275,7 +276,7 @@ body {
   .db {
     font-size: 5rem;
     top: 10rem;
-    right: 5%;
+    right: 1%;
   }
 .ja{
 position: absolute;
@@ -431,15 +432,15 @@ position: absolute;
   color:aliceblue;
   align-items: center;
     row-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    padding: 10%;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    padding: 10px;
 }
 
 .work__container{
   margin: 10px;
   width: 100%;
   text-align: center;
-  width:400px;
+  width:375px;
   font-size: 18px;
   background: rgba(240, 240, 240, 0.539);
   border-radius: 8px;
