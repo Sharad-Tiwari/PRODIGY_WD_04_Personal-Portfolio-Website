@@ -317,7 +317,7 @@ position: absolute;
   align-items: center;
   column-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  width: 80%;
+  width: 100%;
   height: fit-content;
 }
 
